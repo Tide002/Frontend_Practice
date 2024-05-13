@@ -7,3 +7,6 @@ All changes to my class projects
 
 ### css unit, css color, rounded corners.
 -
+## [2.0.0] - 2024-05-01
+
+### development of the social media  dashboard: stage 1
