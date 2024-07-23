@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 *{
     margin: 0;
@@ -34,9 +34,9 @@
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /*position: fixed;
-    z-index: 1000;*/
-}
+    position: fixed;
+    z-index: 1000;
+} 
 
 .nav_bar{
     background-color: var(--very_dark_blue_transparent);
@@ -442,7 +442,7 @@ img{
         grid-row: 2/3;
         display: flex;
         align-items: center;
-    } */
+    }
 
 
     .main-text{
@@ -1112,30 +1112,6 @@ img{
     .info .message{
         line-height: 1.8rem;
         font-size: 1.2rem;
-    }
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }   
@@ -1144,9 +1120,9 @@ img{
 
 
 
-/*  
+ 
 @media only screen and (max-width: 1441px) {
-
+}
 .row{
     max-width: 1000px;
     margin: 0 auto;
@@ -1209,7 +1185,7 @@ p{
 }
 
 
-/*.main-text{
+.main-text{
     margin-right: 2rem;
 }
 
@@ -1325,7 +1301,7 @@ a{
 }
 
 
-/* old 
+old 
 
 
 
@@ -1423,8 +1399,6 @@ a{
 
 }
 
-*/
-
-/*.navigation{
+.navigation{
     padding-right: 20rem;
-}*/
+} */

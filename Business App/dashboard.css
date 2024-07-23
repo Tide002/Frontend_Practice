@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgba(0, 0, 0, 0.062);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 60px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  }
+nav{
+    width: 80px;
+    float: left;
+    background: black;
+    transition: 0.5s ease-out;
+    border-radius: 7px;
+    margin-top: 3px;
+
+}
+nav:hover{
+    width: 290px;
+}
+.sidenav{
+    height:91vh;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    gap: 10px;
+}
+
+.account img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+} 
+.header-icons i h4{
+    padding: 4px;
+
+}
+.sidenav .icon_items a{
+    cursor: pointer; 
+    margin: 4px;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: 0;
+    
+}
+.sidenav .icon_items a:hover{
+    background: #585858;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+
+}
+.sidenav .icon_items a i{
+    font-size: 1.2rem;
+    color:#969696;
+    padding-right: 30px;
+}
+.sidenav .icon_items a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.logout{
+    position: absolute;
+    bottom: 50px;
+}
+.logo{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0.5rem;
+    overflow: hidden;
+}
+  .logo img{
+    width: 40px;
+    height: 40px;
+}
+.logo span{
+    color:black;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 15px;
+    font-weight: bold;
+}
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    gap: 10px;
+}
+.account img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+} 
+.header-icons i h4{
+    padding: 4px;
+}
+.search_box{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+.sec{
+    padding-left: 40px;
+}
+  main .content{
+    display: grid;
+    padding: 10rem;
+    margin-top: 2%;
+    gap: 5px;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+.content .cards{
+    width: 200px;
+    height: 200px;
+    background:#f5f5f5;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.content i{
+   display: grid;
+   place-items: center;
+   padding-top: 6rem;
+   font-size: 20px;
+}
+.cards h4{
+    padding-left: 1rem;
+    padding-top: 1rem; 
+}
+.cards h5{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+
+
+
