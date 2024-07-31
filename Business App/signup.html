@@ -12,28 +12,27 @@
         <div class="container">
             <div class="form-box">
                 <h1 id="title">Signup</h1>
-                <form>
-                    <div class="input-field" id="nameField">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Name"> 
-                    </div>
-                    <div class="input-group">
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder="Email"> 
+                <form action="get" class="loginForm" id="signUpForm">
+                    <label for="username"class="checkMe2">Create Username</label><br>
+                    <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
+                    <label for="password" class="checkMe2">Create Password</label><br>
+                    <input type="password" name="password" id="password"  autocomplete="new-password" required><br>
+                    <!-- <div class="forgotPass text_align">
+                        <div class="forPass" id="forPass2">
+                            <input type="checkbox" name="checkMe" id="checkMe">
+                            <label for="checkMe">
+                                <span class="checkMe1 checkMe2" id="checkMe2"></span>
+                            </label>
                         </div>
-                        <div class="input-field">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Password"> 
-                        </div>
-                    </div> 
-                    <div class="btn-field">
-                        <a href="./dashboard.html"><button type="button">Signup</button></a>
-                    </div>
-                </form>
+                        <p class="forPass1 checkMe1 checkMe2" id="forpass2"></p>
+                    </div> -->
+                    <div class="my_btnLog text_align">
+                        <button class="text_align login" id="signUp">Sign Up</button>
+                    </div>                
+                </form>
                 <p>Already have an account?<a href="./login.html"> Log in here.</a></p>
             </div>
         </div>
-        <script src="app.js"></script>
+        <script src="./signup.js"></script>
 </body>          
 </html>

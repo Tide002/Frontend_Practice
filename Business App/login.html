@@ -12,26 +12,27 @@
         <div class="container">
             <div class="form-box">
                 <h1 id="title">Log In</h1>
-                <form>
-                    <div class="input-group">
-                        <div class="input-field">
-                            <i class="fa-solid fa-envelope"></i>
-                            <input type="email" placeholder="Email"> 
+                <form action="get" class="loginForm" id="loginForm">
+                    <label for="username" class="checkMe2">Username</label><br>
+                    <input type="username" name="username" id="username" placeholder="@johndoe" autocomplete="username" required><br>
+                    <label for="password" class="checkMe2">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Type Password"  autocomplete="new-password" required>
+                    <!-- <div class="forgotPass text_align">
+                        <div class="forPass" id="forPass">
+                            <input type="checkbox" name="checkMe" id="checkMe">
+                            <label for="checkMe">
+                                <span class="checkMe1 checkMe2" id="checkMe1"></span>
+                            </label>
                         </div>
-
-                        <div class="input-field">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Password"> 
-                        </div>
-                        <p>Forgot password?<a href="#"> <span style="color: blueviolet;">Click Here</span></a></p>
-                    </div> 
-                    <div class="btn-field">
-                            <a href="./dashboard.html"><button type="button" class="able">Log-in</button></a>
-                    </div>
-                </form>
+                        <p class="forPass1 checkMe1 checkMe2" id="forpass1"></p>
+                    </div> -->
+                    <div class="my_btnLog text_align">
+                        <button class="text_align login" id="login">Login</button>
+                    </div>                
+                </form>
                 <p>Dont have an account?<a href="./signup.html"> Create Account!</a></p>
             </div>
         </div>
-        <script src="app.js"></script>
+        <script src="./login.js"></script>
 </body>          
 </html>

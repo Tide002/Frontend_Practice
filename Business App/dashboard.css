@@ -10,36 +10,134 @@ body{
 .header{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    /* justify-content:space-evenly; */
     height: 60px;
     padding: 20px;
     background-color: white;
-    border-radius: 10px;
+  }
+  .header .search-box{
+    padding-left: 30rem;
   }
 nav{
-    width: 80px;
-    float: left;
-    background: black;
-    transition: 0.5s ease-out;
-    border-radius: 7px;
-    margin-top: 3px;
+    width: 30%;
+    /* float: left; */
+    background: rgb(75, 75, 75);
+    position : absolute;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    /* transition: 0.5s ease-out; */
+    /* border-radius: 7px; */
+    /* margin-top: 3px; */
 
 }
-nav:hover{
+/* nav:hover{
     width: 290px;
-}
-.sidenav{
+} */
+/* .sidenav{
     height:91vh;
     overflow: hidden;
     position: relative;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+} */
+.newFormcontainer{
+    padding: 1rem;
+    position: absolute;
+    top: 6rem;
+    right: 5%;
+    width: 60%;
+    display: none;
+    /* height: 50vh; */
+    border: 1px solid #ccc;
+    
+}
+.allBiz{
+    position: absolute;
+    top: 6rem;
+    right: 5%;
+    width: 60%;
+    display: none;
+}
+.viewBiz{
+    position: absolute;
+    display: none;
+    /* margin-bottom:1rem; */
+    font-size:clamp(1.5rem, 2.5vw, 1.6rem);
+}
+.bizPlan{
+    font-size:clamp(1.5rem, 2.5vw, 1.6rem);
+    margin-bottom: 1rem;
+}
+.newBiz>input, select, textarea{
+    display: block;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom:1rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.actionBtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 5%;
+}
+.actionBtn >button{
+    padding:1rem;
+    border-radius: 5px;
+    border:none;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.1);
+}
+.suBmit{
+    background-color: rgba(0, 75, 152, 255);
+    color: white;
+
+}
+.tableContainer{
+    /* padding: 1rem; */
+    position: absolute;
+    top: 6rem;
+    right: 5%;
+    width: 50%;
+    display: none;
+    text-align:left;
+    border: 1px solid #ccc;
+}
+th, tr, td{
+    width:70%;
+    padding:10px;
+
+}
+.cardTableBtn>button{
+ margin-top: 1rem;
+ padding: 1rem;
+ border-radius: 5px;
+ border-color: transparent;
+}
+.eDit{
+    color: black;
+}
+.eDit:hover{
+    background-color:white;
+}
+.dElete{
+    color: black;
+}
+.dElete:hover{
+    background-color: white;
 }
 .header-icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 300px;
     padding-right: 20px;
     gap: 10px;
 }
@@ -53,7 +151,7 @@ nav:hover{
     padding: 4px;
 
 }
-.sidenav .icon_items a{
+.sidenav .icon_items button{
     cursor: pointer; 
     margin: 4px;
     padding: 1rem;
@@ -61,20 +159,22 @@ nav:hover{
     display: flex;
     align-items: center;
     transition: 0;
+    background: none;
+    border: none;
     
 }
-.sidenav .icon_items a:hover{
+.sidenav .icon_items button:hover{
     background: #585858;
     border-radius: 10px;
     transition: 0.3s ease-out;
 
 }
-.sidenav .icon_items a i{
+.sidenav .icon_items button i{
     font-size: 1.2rem;
     color:#969696;
-    padding-right: 30px;
+    padding-right: 10px;
 }
-.sidenav .icon_items a{
+.sidenav .icon_items button{
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -102,6 +202,11 @@ nav:hover{
     padding-left: 15px;
     font-weight: bold;
 }
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
 .header-icons {
     display: flex;
     justify-content: space-between;
@@ -126,7 +231,7 @@ nav:hover{
     padding-left: 40px;
 }
   main .content{
-    display: grid;
+    display: none;
     padding: 5rem;
     margin-top: 2%;
     gap: 5px;

@@ -8,67 +8,97 @@
         <script src="https://kit.fontawesome.com/deb28b0110.js" crossorigin="anonymous"></script>
     </head>
     <body> 
-        <div class="page">
-            <div  class="site">
-                <header class="header">
-                    <div class="logo">
-                        <img src="./cropped_image.png" alt="">
-                        <span>ACTRIC</span>
-                    </div>
-                    <div class="search-box">
-                        <input type="text" placeholder="Search EasyPay">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="header-icons">
-                        <i class="fa-solid fa-bell"></i>
-                        <div class="account">
-                            <img src="./business woman.jpeg" alt="">
-                        </div>
-                        <h4>Olatide</h4>
-                    </div>
-                    
-                </header>
-                <nav>
-                    <div class="sidenav">
-                    
-                        <div class="icon_items">
-                            <a href="#"><i class="fa-solid fa-chart-column"></i>Dashboard</a>
-                            <a href="#"><i class="fa-solid fa-folder-open"></i>View all Business Plans</a>
-                            <a href="./Newbizplan.html"><i class="fa-solid fa-folder-plus"></i>Create new Business Plans</a>
-                            <a href="#"><i class="fa-solid fa-file"></i>All Business Plans</a>
-        
-                            <a href="./index.html" class="logout"> 
-                                <i class="fa-solid fa-right-from-bracket"></i> Logout
-                            </a>
-                        </div>
-                    </div> 
-                </nav>
+                
+        <header class="header">
+            <div class="logo">
+                <img src="./cropped_image.png" alt="">
+                <span>ACTRIC</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search EasyPay">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-icons">
+                <i class="fa-solid fa-bell"></i>
+                <div class="account">
+                    <img src="./business woman.jpeg" alt="">
+                </div>
+                <h4>Olatide</h4>
+            </div>
+            
+        </header>
+
                 <main>
-                   <div class="sec">
-                        <div class="content">
-                            <div class="cards">
-                                    <i class="fa-solid fa-plus"></i>
-                                </div>
-                            <div class="cards">
-                                    <h4>
-                                        Business Name
-                                    </h4>
-                                    <h5>
-                                        Description
-                                    </h5>
+                   
+                   <section>
+                    <nav>
+                        <div class="sidenav">
+                        
+                            <div class="icon_items">
+                                <button onclick="boArd()"><i class="fa-solid fa-chart-column"></i>Dashboard</button>
+                                <button onclick="allBiz()"><i class="fa-solid fa-folder-open"></i>View all Business Plans</button>
+                                <button onclick="newPlan()"><i class="fa-solid fa-folder-plus"></i>Create new Business Plans</button>
+            
+                                <button onclick="loGout()" class="logout"> 
+                                    <i class="fa-solid fa-right-from-bracket"></i> Logout
+                                </button>
                             </div>
-                            <div class="cards">
-                                <h4>
-                                    Business Name
-                                </h4>
-                                <h5>
-                                    Description
-                                </h5>
+                        </div> 
+                    </nav>
+                   </section>
+                   <section>
+                    <div class="newFormcontainer" id="newFormcontainer">
+                        <div class="bizPlan">
+                            <span id="newBiztitle">Create New Business Plan</span>
+                        </div>
+                        <form id="newBiz" class="newBiz">
+                            
+                            <label for="BizName">Name:</label>
+                            <input type="text" id="BizName" name="BizName" placeholder="Business Name">
+                            
+                            <label for="Biztype">Type:</label>
+                            <select id="Biztype">
+                                <option value="corporation">Corporation</option>
+                                <option value="non-profit">Non-profit</option>
+                                <option value="ooperative">Cooperative</option>
+                            </select>
+                            <label for="descr">Describe Business:</label>
+                            <textarea id="descr" placeholder="Describe Business"></textarea>
+                        </form>
+                        <div class="radioBox" style="display:none;">
+                            <label for="visibility">Visibility Status:</label>
+                              <input type="radio" name="visibility" value="Private" checked> Private
+              
+                        </div>
+                        <div class="actionBtn">
+                            <button onclick="submitFunction()" id="submitFunction" class="suBmit">Submit</button>
+                            <button onclick="cancelFunction()" class="cAncel">Cancel</button>
                         </div>
                    </div>
+        
+                   
+                   <section class="allBiz">
+                        <h4 class="viewBiz">View all Businesses</h4>
+                        <div id="business-cards" class="card-grid"></div>
+                    </section>
+            
+                 <section>
+                        <table class="tableContainer" id="tableContainer" style="display:block;">
+                            <thead>
+                                <tr>
+                                    <th class="dataEntry dataEntry1">Name</th>
+                                    <th class="dataEntry">Description</th>
+                                    <th class="dataEntry">Type</th>
+                                    <th class="dataEntry">Visibility</th>
+                                </tr>
+                            </thead>
+                            <tbody class="business-list" id="business-list"></tbody>
+                        </table>
+                  </section>
+
+                </section>
                 </main>
-            </div>
-        </div>
         <script src="dashboard.js"></script>
+
     </body> 
 </html>
